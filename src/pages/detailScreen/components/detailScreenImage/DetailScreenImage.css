@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@1&display=swap');
+
 div.detail-screen-image {
-    width: 10em;
-    height: 10em;
-    background-color: red;
-    font-size: small;
-    margin: 1em;
+    font-family: 'JetBrains Mono', monospace;
+    text-align: center;
+    background-color: #1f1e1e;
+    border: 0.3em solid #1f1e1e;
+    border-radius: 1em;
+    width: 16.8em;
+    height: 20em;
+    padding: 1em 0.2em 1.5em 0em;
+    margin-top: 0.5em;
+    margin-left: 3em;
+
 }

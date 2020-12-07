@@ -4,8 +4,10 @@ div.app {
 }
 
 div.app > div.app__app-header{ 
-  background-color:#181a2b;
+  background-color:#790606;
   height: 5.5vh;
+  width: 96.4vw;
   text-align: right;
-  padding: 0.5em;
+  padding: 0.5em 1.5em 0.5em 0.5em; 
+  position: absolute;
 }
