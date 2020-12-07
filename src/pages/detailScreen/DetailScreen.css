@@ -1,0 +1,7 @@
+div.detail-screen { 
+    background-color: coral;
+    font-size: x-large;
+    height: calc(100vh - 8vh);
+    overflow-x: hidden;
+
+}

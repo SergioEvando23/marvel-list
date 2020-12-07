@@ -1,0 +1,5 @@
+div.list-screen {
+    font-size: x-large;
+    height: calc(100vh - 8vh);
+    overflow-x: hidden;
+}

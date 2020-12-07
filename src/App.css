@@ -2,3 +2,8 @@ div.app {
   background-color: #052025;
   color: #ffffff
 }
+
+div.app > div.app__header{ 
+  background-color: brown;
+  height: 8vh;
+}

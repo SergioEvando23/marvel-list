@@ -1,0 +1,7 @@
+div.list-screen-card {
+    font-size: small;
+    border: 2px solid black;
+    width: 15em;
+    height: 22em;
+    margin: 1em;
+}
