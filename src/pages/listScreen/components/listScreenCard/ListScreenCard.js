@@ -1,10 +1,11 @@
 import React from 'react';
 import './ListScreenCard.css';
 
-const ListScreenCard = props => {
+const ListScreenCard = ({name, urlImg, typeImg}) => {
     return (
         <div className="list-screen-card">
-                list screen card
+          {name}
+          <img src={urlImg+"."+typeImg} width="208" height="240" />
         </div>
     );
 };

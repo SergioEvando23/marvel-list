@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@1&display=swap');
+
 div.list-screen-card {
     font-size: small;
+    font-family: 'JetBrains Mono', monospace;
+    background-color: black;
     border: 2px solid black;
-    width: 15em;
-    height: 22em;
-    margin: 1em;
+    border-radius: 1em;
+    color: #808080;
+    width: 16em;
+    height: 21em;
+    margin: 0.8em 0.5em 0.8em 0.5em;
 }

@@ -9,7 +9,6 @@ function App() {
         app__reader
       </div>
       <div  className="app__body" >
-        app__body
         <ListScreen />
         <DetailScreen />
       </div>

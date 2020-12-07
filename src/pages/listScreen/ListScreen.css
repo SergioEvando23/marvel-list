@@ -1,5 +1,12 @@
 div.list-screen {
     font-size: x-large;
     height: calc(100vh - 8vh);
+    width: 98vw;
     overflow-x: hidden;
+    overflow-y: unset;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
