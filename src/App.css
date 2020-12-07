@@ -3,7 +3,9 @@ div.app {
   color: #ffffff
 }
 
-div.app > div.app__header{ 
-  background-color: brown;
-  height: 8vh;
+div.app > div.app__app-header{ 
+  background-color:#181a2b;
+  height: 5.5vh;
+  text-align: right;
+  padding: 0.5em;
 }
