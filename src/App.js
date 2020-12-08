@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div className="app">
         <div className="app__app-header"> 
-          <Link to="/"><Button variant="outlined" color="primary" style={{padding:"0.2em", color:"#ffffff"}}>Home</Button></Link>
+          <Link to="/"><Button variant="outlined" color="primary" style={{padding:"0.2em"}}>Home</Button></Link>
           <div className="app__app-header__app-header-logo"> 
           <Link to="/"><img src="https://images.vectorhq.com/images/previews/cd8/marvel-logo-psd-444569.png" width="95" height="35"/></Link>
           </div>
