@@ -1,0 +1,24 @@
+div.detail-screen-filled {
+    background-color: #060f1f9b;
+    border: 0.2em solid #000000;
+    border-radius: 1em;
+    margin-left: 8em;
+    margin-top: 1em;
+    height: 18em;
+    width: 14.8em;
+}
+
+div.detail-screen-filled > div.detail-screen-filled__detail-screen-filled-title {
+    padding: 0.3em;
+    background-color: #000000;
+    margin-top: 1em;
+    margin-left: -0.1em;
+    width: 14.4em;
+    position: relative;
+    text-align: center;
+    
+}
+
+div.detail-screen-filled > div.detail-screen-filled__detail-screen-filled-info {
+    padding: 3em 1em 3em 1em;
+}

@@ -1,9 +1,18 @@
-div.detail-screen { 
-    background-color: coral;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+div.detail-screen {
+    background-image: url(https://wallpapercave.com/wp/wp2903386.gif);
     font-size: x-large;
     height: 92vh;
-    width: 98vw;
+    width: 98.75vw;
     padding-top: 8vh;
     overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.detail-screen > div.detail-screen__detail-screen-info {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: larger;
 
 }
