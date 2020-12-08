@@ -1,13 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap');
+
 div.app {
   position: absolute;
-  color: #ffffff
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 div.app > div.app__app-header{ 
+  font-family: 'Marvel', sans-serif;
   background-color:#790606;
   height: 5.5vh;
-  width: 96.4vw;
-  text-align: right;
-  padding: 0.5em 1.5em 0.5em 0.5em; 
+  width: 97.65vw;
+  text-align: left;
+  margin-right: 0.5em ;
+  padding: 0.5em 0.5em 0.5em 1.5em; 
   position: absolute;
+}
+
+div.app > div.app__app-header > div.app__app-header__app-header-logo {
+  text-align: center;
+  margin-top: -2em;
 }

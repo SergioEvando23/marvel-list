@@ -3,13 +3,15 @@ import './DetailScreen.css';
 import DetailScreenImage from './components/detailScreenImage/DetailScreenImage';
 import DetailScreenFilled from './components/detailScreenFilled/DetailScreenFilled';
 import hero from '../../__mocks__/hero';
+import {Link} from 'react-router-dom';
+import Button from '@material-ui/core/Button'
 
 const DetailScreen = props => {
     const detailImage = hero?.data?.results?.map((item, index ) => {
         console.log(item)
         return (
             <div key={index}>
-                <DetailScreenImage 
+                  <DetailScreenImage 
                     name={item?.name} 
                     urlImg={item?.thumbnail?.path} 
                     typeImage={item?.thumbnail?.extension} 

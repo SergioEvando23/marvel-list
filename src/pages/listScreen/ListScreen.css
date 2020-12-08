@@ -2,7 +2,7 @@ div.list-screen {
     background-image: url(https://wallpapercave.com/wp/wp2903386.gif);
     font-size: x-large;
     height: 92vh;
-    width: 98.75vw;
+    width: 100vw;
     padding-top: 8vh;
     overflow-x: hidden;
     overflow-y: unset;
@@ -11,4 +11,11 @@ div.list-screen {
     flex-wrap: wrap;
     justify-content: space-between;
 
+}
+
+div.list-screen > div.list-screen__list-screen-buttons {
+    position: absolute;
+    text-align: right;
+    margin-top: -2em;
+    width: 98vw;
 }
