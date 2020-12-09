@@ -1,20 +1,19 @@
 import React, {useEffect, useState} from 'react';
 import './ListScreen.css';
-import characters from '../../__mocks__/characters';
+// import characters from '../../__mocks__/characters';
 import ListScreenCard from './components/listScreenCard/ListScreenCard';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/button';
 import axios from '../../core/axios.config';
-import {PUBLIC_KEY} from '../../core/constants';
+// import {PUBLIC_KEY} from '../../core/constants';
+import encrypt from '../../utils/encrypt';
 
 const ListScreen = props => {
     const [characters, setCharacters] = useState({});
-    console.log(characters)
 
     useEffect(() => {
-        axios.get(`characters?apikey=${PUBLIC_KEY}`).then((response) => {
-            console.log(response)
-            setCharacters(response)
+        axios.get(`characters?${encrypt()}`).then((response) => {
+            setCharacters(response?.data)
         }).catch(console.error)
     }, []);
 
