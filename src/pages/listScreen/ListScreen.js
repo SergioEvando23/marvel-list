@@ -7,10 +7,11 @@ import Button from '@material-ui/core/button';
 import axios from '../../core/axios.config';
 // import {PUBLIC_KEY} from '../../core/constants';
 import encrypt from '../../utils/encrypt';
+import {BASE_URL, ISO_URL} from '../../core/constants';
 
 const ListScreen = props => {
     const [characters, setCharacters] = useState({});
-
+    
     useEffect(() => {
         axios.get(`characters?${encrypt()}`).then((response) => {
             setCharacters(response?.data)
@@ -18,10 +19,13 @@ const ListScreen = props => {
     }, []);
 
     const charactersInfo = characters?.data?.results?.map((item, index) =>{
-    
+        const url = item?.resourceURI
+        const parsedUrl = url.replace(ISO_URL, "");
+        console.log(parsedUrl)
+
         return (
             <div key={index}>
-               <Link to="/detail" ><ListScreenCard name={item?.name} urlImg={item?.thumbnail?.path} typeImg={item?.thumbnail?.extension} /></Link> 
+               <Link to={`/detail?url=${parsedUrl}`}><ListScreenCard name={item?.name} urlImg={item?.thumbnail?.path} typeImg={item?.thumbnail?.extension} /></Link> 
             </div>
         )
     });

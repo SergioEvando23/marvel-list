@@ -1,14 +1,26 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './DetailScreen.css';
 import DetailScreenImage from './components/detailScreenImage/DetailScreenImage';
 import DetailScreenFilled from './components/detailScreenFilled/DetailScreenFilled';
-import hero from '../../__mocks__/hero';
-import {Link} from 'react-router-dom';
-import Button from '@material-ui/core/Button'
+import axios from '../../core/axios.config';
+import encrypt from '../../utils/encrypt';
+import { useHistory } from 'react-router-dom';
+// import hero from '../../__mocks__/hero';
+
 
 const DetailScreen = props => {
+    const history = useHistory();
+    const [hero, setHero] = useState({});
+
+    useEffect(() => {
+        const search = history?.location?.search
+        const parsedSearch = search.replace("?url=", "" )
+        axios.get(`characters/${parsedSearch}?${encrypt()}`).then((response) => {
+            setHero(response?.data)
+        }).catch(console.error)
+    }, []);
+
     const detailImage = hero?.data?.results?.map((item, index ) => {
-        console.log(item)
         return (
             <div key={index}>
                   <DetailScreenImage 
